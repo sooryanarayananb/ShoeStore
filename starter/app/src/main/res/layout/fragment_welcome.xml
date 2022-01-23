@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	tools:context="com.udacity.shoestore.screens.welcome.WelcomeFragment">
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+
+		<TextView
+			android:id="@+id/welcomeHeaderText"
+			android:text="Welcome To The Awesome Shoe Store"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:textSize="24sp"
+			android:layout_marginStart="16dp"
+			android:layout_marginEnd="16dp"
+			android:layout_marginTop="16dp"
+			app:layout_constraintBottom_toTopOf="@+id/currentUserText"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			app:layout_constraintVertical_bias="0.48000002"
+			app:layout_constraintVertical_chainStyle="packed" />
+
+		<Button
+			android:id="@+id/continueButton"
+			android:text="Continue"
+			android:layout_width="379dp"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="24dp"
+			android:layout_marginEnd="16dp"
+			android:layout_marginStart="16dp"
+			android:layout_marginBottom="16dp"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/welcomeIntroText" />
+
+		<TextView
+			android:id="@+id/welcomeIntroText"
+			android:text="@string/welcome_text"
+			android:layout_width="379dp"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:layout_marginStart="16dp"
+			android:layout_marginEnd="16dp"
+			app:layout_constraintBottom_toTopOf="@+id/continueButton"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/currentUserText" />
+
+		<TextView
+			android:id="@+id/currentUserText"
+			android:layout_width="379dp"
+			android:layout_height="wrap_content"
+			android:hint="Hi, Example user"
+			android:textSize="18sp"
+			android:textColor="#000000"
+			android:textColorHint="#000000"
+			android:layout_marginTop="16dp"
+			android:layout_marginEnd="16dp"
+			android:layout_marginStart="16dp"
+			app:layout_constraintBottom_toTopOf="@+id/welcomeIntroText"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/welcomeHeaderText" />
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
