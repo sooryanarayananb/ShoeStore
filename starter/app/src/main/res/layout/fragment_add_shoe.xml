@@ -39,7 +39,7 @@
 			android:id="@+id/shoeSizeEditText"
 			android:layout_width="0dp"
 			android:layout_height="wrap_content"
-			android:inputType="textPersonName"
+			android:inputType="number"
 			android:ems="10"
 			android:layout_marginTop="16dp"
 			android:hint="Shoe Size"

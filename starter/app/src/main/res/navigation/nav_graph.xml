@@ -16,6 +16,7 @@
 			app:enterAnim="@anim/fragment_fade_enter"
 			app:exitAnim="@anim/fragment_fade_exit"
 			app:launchSingleTop="false"
+			app:popUpTo="@id/loginFragment"
 			app:popUpToInclusive="true" />
 	</fragment>
 	<fragment
@@ -28,6 +29,7 @@
 			app:destination="@id/instructionsFragment"
 			app:enterAnim="@anim/fragment_fade_enter"
 			app:exitAnim="@anim/fragment_fade_exit"
+			app:popUpTo="@id/welcomeFragment"
 			app:popUpToInclusive="true" />
 		<argument
 			android:name="userName"
@@ -44,6 +46,7 @@
 			app:destination="@id/shoesListing"
 			app:enterAnim="@anim/fragment_fade_enter"
 			app:exitAnim="@anim/fragment_fade_exit"
+			app:popUpTo="@id/instructionsFragment"
 			app:popUpToInclusive="true" />
 	</fragment>
 	<fragment
@@ -51,15 +54,25 @@
 		android:name="com.udacity.shoestore.screens.shoes.ShoesListing"
 		android:label="fragment_shoes_listing"
 		tools:layout="@layout/fragment_shoes_listing" >
+		<argument
+			android:name="newShoe"
+			app:argType="com.udacity.shoestore.models.Shoe"
+			app:nullable="true"
+			android:defaultValue="@null" />
 		<action
-			android:id="@+id/action_shoesListing_to_addShoe"
-			app:destination="@id/addShoe"
+			android:id="@+id/action_shoesListing_to_addShoeFragment"
+			app:destination="@id/addShoeFragment"
 			app:enterAnim="@anim/fragment_fade_enter"
-			app:exitAnim="@anim/fragment_close_exit" />
+			app:exitAnim="@anim/fragment_fade_exit"
+			app:popUpToInclusive="false" />
 	</fragment>
 	<fragment
-		android:id="@+id/addShoe"
+		android:id="@+id/addShoeFragment"
 		android:name="com.udacity.shoestore.screens.shoes.AddShoe"
 		android:label="fragment_add_shoe"
-		tools:layout="@layout/fragment_add_shoe" />
+		tools:layout="@layout/fragment_add_shoe" >
+		<action
+			android:id="@+id/action_addShoeFragment_to_shoesListing"
+			app:destination="@id/shoesListing" />
+	</fragment>
 </navigation>

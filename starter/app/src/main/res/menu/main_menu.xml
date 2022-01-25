@@ -3,10 +3,9 @@
 
 	<!-- "Mark Favorite", should appear as action button if possible -->
 	<item
-		android:id="@+id/action_favorite"
-		android:icon="@drawable/ic_add"
-		android:title="Add Shoe"
-		app:showAsAction="ifRoom"/>
+		android:id="@+id/loginFragment"
+		android:title="Logout"
+		app:showAsAction="always"/>
 
 
 </menu>
