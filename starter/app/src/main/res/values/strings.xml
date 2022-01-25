@@ -4,4 +4,13 @@
 	<string name="password">Password</string>
 	<string name="welcome_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</string>
 	<string name="instruction_text">To add a new shoe item, click add item button on the top and insert the item. To start inserting item click continue button. All data will be lost when app is closed.</string>
+	<string name="add_shoe">Add Shoe</string>
+	<string name="description">Description</string>
+	<string name="shoe_size">Shoe Size</string>
+	<string name="company">Company</string>
+	<string name="shoe_name">Shoe Name</string>
+	<string name="instructions">Instructions</string>
+	<string name="welcome_to_the_awesome_shoe_store">Welcome To The Awesome Shoe Store</string>
+	<string name="continue">Continue</string>
+	<string name="hi_example_user">Hi, Example user</string>
 </resources>
